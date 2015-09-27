@@ -1,7 +1,7 @@
 Spree::Taxon.class_eval do
   # add custom size to icon and default to :normal size
   has_attached_file :icon,
-      styles: { mini: '32x32>', normal: '128x128>', custom: '285x380>' },
+      styles: { mini: '32x32>', normal: '128x128>', custom: '256x256>' },
       default_style: :mini,
       url: '/spree/taxons/:id/:style/:basename.:extension',
       path: ':rails_root/public/spree/taxons/:id/:style/:basename.:extension',
