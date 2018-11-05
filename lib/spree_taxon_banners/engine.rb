@@ -1,7 +1,6 @@
 module SpreeTaxonBanners
   class Engine < Rails::Engine
-    require 'spree/core'
-    isolate_namespace Spree
+
     engine_name 'spree_taxon_banners'
 
     # use rspec for tests

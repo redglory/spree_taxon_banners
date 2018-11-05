@@ -1,4 +1,5 @@
 <%= f.field_container :banner, class: ['form-group'] do %>
   <%= f.label :banner, Spree.t(:banner) %>
+  <%= image_tag main_app.url_for(@taxon.banner.try(:attachment)) if @taxon.banner %>
   <%= f.file_field :banner %>
 <% end %>

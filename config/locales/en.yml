@@ -2,4 +2,10 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    errors:
+      models:
+        spree/taxon_banner:
+          attributes:
+            attachment:
+              not_allowed_content_type: has not allowed content type
